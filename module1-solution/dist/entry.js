@@ -1,8 +1,11 @@
 'use strict';
 
 (function () {
+    "use strict";
+
     angular.module('MainApp', []).controller('MainController', function ($scope) {
         var sc = $scope;
+        sc.lunchMenu = '';
 
         sc.resetValidator = function () {
             $scope.validator = '';

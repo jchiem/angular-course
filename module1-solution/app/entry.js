@@ -3,7 +3,7 @@
     angular.module('MainApp', []).
     controller('MainController', ($scope) => {
         const sc = $scope;
-
+        sc.lunchMenu = '';
 
         sc.resetValidator = function() {
             $scope.validator = '';
