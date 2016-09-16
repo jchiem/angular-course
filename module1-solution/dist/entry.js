@@ -3,7 +3,10 @@
 (function () {
     "use strict";
 
-    angular.module('MainApp', []).controller('MainController', function ($scope) {
+    var app = angular.module('MainApp', []).controller('MainController', MainController);
+    MainController.$inject = ['$scope'];
+
+    function MainController($scope) {
         var sc = $scope;
         sc.lunchMenu = '';
 
@@ -27,5 +30,5 @@
                 }
             }
         };
-    });
+    }
 })();
