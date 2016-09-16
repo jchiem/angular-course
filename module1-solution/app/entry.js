@@ -1,4 +1,5 @@
 (() => {
+    "use strict";
     angular.module('MainApp', []).
     controller('MainController', ($scope) => {
         const sc = $scope;
