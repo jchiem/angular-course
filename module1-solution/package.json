@@ -3,9 +3,7 @@
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
-  "dependencies": {
-    "angular": "^1.5.8"
-  },
+  "dependencies": {},
   "devDependencies": {
     "babel-preset-es2015": "^6.14.0",
     "browser-sync": "^2.15.0",
