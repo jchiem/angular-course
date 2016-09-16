@@ -1,0 +1,29 @@
+<!doctype html>
+<html lang="en" ng-app="MainApp">
+
+<head>
+    <title>Lunch Checker</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <script src="./node_modules/angular/angular.min.js"></script>
+    <script src="./dist/entry.js"></script>
+</head>
+
+<body>
+    <div class="container" ng-controller="MainController">
+        <h1>Lunch checker</h1>
+        <div class="form-group">
+            <input ng-change="resetValidator()" id="lunch-menu" type="text" ng-model="lunchMenu" placeholder="list comma separated dishes you usually have for lunch" class="form-control">
+        </div>
+        <div class="form-group">
+            <button ng-click="checkIfTooMuch()" class="btn btn-default">Check If Too Much</button>
+        </div>
+        <div class="form-group message">
+            <p>{{validator}}</p>
+        </div>
+    </div>
+
+</body>
+
+</html>
