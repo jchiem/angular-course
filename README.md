@@ -1,8 +1,7 @@
 # Information
-
-Application uses Angular 1.5
+To run:
 
 npm install -g browser-sync
+npm install
 
-To run browser-sync:
-browser-sync start --server --directory --files "\*\*/\*"
+gulp serve
