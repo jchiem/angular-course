@@ -1,7 +1,10 @@
 (() => {
     "use strict";
-    angular.module('MainApp', []).
-    controller('MainController', ($scope) => {
+    var app = angular.module('MainApp', []).
+    controller('MainController', MainController);
+    MainController.$inject = ['$scope'];
+
+    function MainController($scope) {
         const sc = $scope;
         sc.lunchMenu = '';
 
@@ -25,5 +28,5 @@
                 }
             }
         }
-    });
+    }
 })();
