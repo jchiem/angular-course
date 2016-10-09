@@ -1,0 +1,7 @@
+<p ng-if="menuList.noItems">Nothing found</p>
+<ul>
+    <li ng-repeat="item in menuList.items">
+        <p>{{ item.name }} {{ item.shortname }} {{ item.description }}</p>
+        <button class="btn btn-danger" ng-click="menuList.onRemove({index: $index})">Don't want this one!</button>
+    </li>
+</ul>
